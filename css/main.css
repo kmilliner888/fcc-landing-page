@@ -8,11 +8,12 @@ body {
 header {
     display: grid;
     grid-template-columns: repeat(3, auto);
-    grid-template-rows: 9em;
+    grid-template-rows: repeat(2, auto);
     grid-gap: 5px;
     position: sticky;
     top: 0;
     background-color: black;
+    z-index: 99999;
 }
 
 header nav img {
@@ -20,7 +21,11 @@ header nav img {
     grid-row: 1/2;
     justify-self: center;
     align-self: center;
-    /* padding-top: .5em; */
+}
+
+#header-img {
+    justify-self: center;
+    align-self: center;
     width: 100%;
     height: auto;
     max-width: 18.75em;
@@ -28,17 +33,11 @@ header nav img {
     min-width: 9.375em;
 }
 
-#header-img {
-    justify-self: center;
-    align-self: center;
-}
-
 header nav {
     grid-column: 3/4;
     grid-row: 1/2;
     justify-self: center;
     align-self: center;
-    /* padding-top: 2em; */
 }
 
 header nav ul {
@@ -92,7 +91,14 @@ header nav ul li a:hover {
     pointer-events: none;
 }  */
 
-#getfit {
+.getfit { 
+    position:relative; 
+}
+#getfit { 
+    position:absolute; top:-145px;
+}
+
+.getfit {
     grid-column: 1/4;
     grid-row: 2/3;
     display: grid;
@@ -100,7 +106,7 @@ header nav ul li a:hover {
     grid-template-rows: repeat(6, auto);
     grid-gap: 5px;
     padding-top: 1em;
-    padding-bottom: 4em;
+    /* padding-bottom: 4em; */
 }   
 
 
@@ -173,50 +179,63 @@ header nav ul li a:hover {
     padding-bottom: 3em;
 }
 
-#classes {
+.classes {
     grid-column: 1/4;
     grid-row: 3/4;
-    display: grid;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /* display: grid;
     grid-template-columns: repeat(3, auto);
     grid-template-rows: repeat(3,auto);
     grid-gap: 5px;
-    padding-bottom: 4em;
+    padding-bottom: 4em; */
+}
+
+.classes { 
+    position:relative; 
+}
+#classes { 
+    position:absolute; top:-145px;
 }
 
 #beginner {
-    grid-column: 1/2;
+    /* grid-column: 1/2;
     grid-row: 1/2;
     justify-self: center;
-    align-self: center;
+    align-self: center; */
     text-align: center;
     padding: 5em 2em;
     background-color: #ff5050;
     color: black;
     border-radius: 10px;
+    margin: 1em;
 }
 
 #intermediate {
-    grid-column: 2/3;
+    /* grid-column: 2/3;
     grid-row: 1/2;
     justify-self: center;
-    align-self: center;
+    align-self: center; */
     text-align: center;
     padding: 5em 2em;
     background-color: #ff5050;
     color: black;
     border-radius: 10px;
+    margin: 1em;
 }
 
 #advanced {
-    grid-column: 3/4;
+    /* grid-column: 3/4;
     grid-row: 1/2;
     justify-self: center;
-    align-self: center;
+    align-self: center; */
     text-align: center;
     padding: 5em 2em;
     background-color: #ff5050;
     color: black;
     border-radius: 10px;
+    margin: 1em;
 }
 
 /* @media (min-width: 768px) and (max-width: 1060px) {
@@ -226,7 +245,7 @@ header nav ul li a:hover {
     }
 }  */
 
-@media (min-width: 320px) and (max-width: 1060px) {
+@media (max-width: 1060px) {
     #header-img {
         grid-column: 1/4;
         grid-row: 1/2;
@@ -237,7 +256,7 @@ header nav ul li a:hover {
     header nav {
         display: inline;
         grid-column: 1/4;
-        grid-row: 1/2;
+        grid-row: 2/3;
         justify-self: center;
         align-self: end;
         padding: 0;
@@ -247,7 +266,7 @@ header nav ul li a:hover {
         font-size: 1.5em;
     }
 
-@media (min-width: 320px) and (max-width: 768px) {
+@media (max-width: 768px) {
 
     #chain {
         grid-column: 1/5;
@@ -342,3 +361,14 @@ header nav ul li a:hover {
         align-self: center;
     }
 } 
+
+@media (max-width: 319px) {
+    header nav {
+        display: block;
+        grid-column: 2/3;
+        grid-row: 2/3;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+    }
+}
