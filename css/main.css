@@ -5,6 +5,10 @@ body {
     font-size: 16px;
 }
 
+
+/* HEADER SECTION */
+
+
 header {
     display: grid;
     grid-template-columns: repeat(3, auto);
@@ -64,6 +68,12 @@ header nav ul li a:hover {
     color: white;
 }
 
+
+
+/* MAIN SECTION */
+
+
+
 #main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -81,15 +91,11 @@ header nav ul li a:hover {
     height: auto;
 }
 
-/* #getfit::before {
-    display: block;
-    position: relative;
-    content: " ";
-    margin-top: -144px;
-    height: 144px;
-    visibility: hidden;
-    pointer-events: none;
-}  */
+
+
+/* GET FIT SECTION */
+
+
 
 .getfit { 
     position:relative; 
@@ -106,7 +112,6 @@ header nav ul li a:hover {
     grid-template-rows: repeat(6, auto);
     grid-gap: 5px;
     padding-top: 1em;
-    /* padding-bottom: 4em; */
 }   
 
 
@@ -179,17 +184,21 @@ header nav ul li a:hover {
     padding-bottom: 3em;
 }
 
+
+
+
+/* CLASS PASS SECTION */
+
+
+
+
 .classes {
     grid-column: 1/4;
     grid-row: 3/4;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    /* display: grid;
-    grid-template-columns: repeat(3, auto);
-    grid-template-rows: repeat(3,auto);
-    grid-gap: 5px;
-    padding-bottom: 4em; */
+    margin-top: 50px;
 }
 
 .classes { 
@@ -200,10 +209,6 @@ header nav ul li a:hover {
 }
 
 #beginner {
-    /* grid-column: 1/2;
-    grid-row: 1/2;
-    justify-self: center;
-    align-self: center; */
     text-align: center;
     padding: 5em 2em;
     background-color: #ff5050;
@@ -213,10 +218,6 @@ header nav ul li a:hover {
 }
 
 #intermediate {
-    /* grid-column: 2/3;
-    grid-row: 1/2;
-    justify-self: center;
-    align-self: center; */
     text-align: center;
     padding: 5em 2em;
     background-color: #ff5050;
@@ -226,10 +227,6 @@ header nav ul li a:hover {
 }
 
 #advanced {
-    /* grid-column: 3/4;
-    grid-row: 1/2;
-    justify-self: center;
-    align-self: center; */
     text-align: center;
     padding: 5em 2em;
     background-color: #ff5050;
@@ -238,12 +235,93 @@ header nav ul li a:hover {
     margin: 1em;
 }
 
-/* @media (min-width: 768px) and (max-width: 1060px) {
-    header nav ul li {
-        display: block;
-        padding: 0;
-    }
-}  */
+.classes h3 {
+    font-size: 1.5em;
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+.classes p {
+    font-size: 1em;
+    font-weight: normal;
+    color: white;
+}
+
+.classes .cost {
+    font-size: 2em;
+    font-weight: bold;
+    color: black;
+}
+
+.classes button {
+    font-size: 1.5em;
+    font-weight: normal;
+    border-radius: 5px;
+    background-color: #ffcc00;
+    width: 4em;
+    height: 1.5em;
+}
+
+button:hover {
+    background-color: #e8882c;
+}
+
+
+
+/* CONTACT FORM SECTION */
+
+
+
+
+.contact {
+    grid-column: 1/4;
+    grid-row: 4/5;
+    justify-self: center;
+    align-self: center;
+    text-align: center;  
+    margin-top: 75px;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 100px;
+    background-color: #262626;
+}
+
+input {
+    padding: 10px 50px; 
+}
+
+label {
+    margin: 15px;
+}
+
+#submit {
+    font-size: 1em;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    margin: 20px;
+    padding: 3px 5px;
+    border-radius: 5px;
+    width: 80px;
+}
+
+
+/* FOOTER SECTION */
+
+footer {
+    text-align: center;
+    margin: 50px;
+}
+
+
+/* MEDIA QUERIES SECTION */
+
+
+
 
 @media (max-width: 1060px) {
     #header-img {
@@ -359,6 +437,10 @@ header nav ul li a:hover {
         grid-row: 3/4;
         justify-self: center;
         align-self: center;
+    }
+
+    #contact-form {
+        padding: 20px;
     }
 } 
 
