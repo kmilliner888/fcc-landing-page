@@ -79,16 +79,15 @@
 
 <!-- CONTACT SECTION -->
         <div class="contact"><span id="contact"></span>
-            <form id="contact-form">
+            <form action="https://www.freecodecamp.com/email-submit" method="POST" id="form">
                 <h2>Contact Us</h2>
                 <label for="name" id="name-label">Name: </label>
                     <input type="text" id="name" placeholder="Enter Your Name" required></input>
                 <label for="email" id="email-label">Email: </label>
-                    <input type="text" id="name" placeholder="Enter Your Email" required></input>
+                    <input type="email" id="email" name="email" placeholder="Enter Your Email" required></input>
                 <p id="message">Send us a message</p>
                 <textarea></textarea>
-                <form action="https://www.freecodecamp.com/email-submit" method="post" enctype="text/plain">
-                    <input type="submit" id="submit" value="Submit"/>
+                <input type="submit" id="submit"></input>
                 </form>
             </form>
             

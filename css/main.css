@@ -202,10 +202,12 @@ header nav ul li a:hover {
 }
 
 .classes { 
-    position:relative; 
+    position: relative; 
 }
+
 #classes { 
-    position:absolute; top:-145px;
+    position: absolute; 
+    top:-145px;
 }
 
 #beginner {
@@ -283,7 +285,7 @@ button:hover {
     margin-top: 75px;
 }
 
-#contact-form {
+#form {
     display: flex;
     flex-direction: column;
     padding: 20px 100px;
@@ -453,4 +455,5 @@ footer {
         align-content: center;
         text-align: center;
     }
+}
 }
