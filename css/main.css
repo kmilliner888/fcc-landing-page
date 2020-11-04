@@ -61,7 +61,7 @@ header nav ul li a {
     font-style: normal;
     font-size: 2em;
     color: #ff5050;
-    text-decoration: none;  
+    text-decoration: none;
 }
 
 header nav ul li a:hover {
@@ -97,10 +97,10 @@ header nav ul li a:hover {
 
 
 
-.getfit { 
-    position:relative; 
+.getfit {
+    position:relative;
 }
-#getfit { 
+#getfit {
     position:absolute; top:-145px;
 }
 
@@ -112,7 +112,7 @@ header nav ul li a:hover {
     grid-template-rows: repeat(6, auto);
     grid-gap: 5px;
     padding-top: 1em;
-}   
+}
 
 
 #chain {
@@ -201,12 +201,12 @@ header nav ul li a:hover {
     margin-top: 50px;
 }
 
-.classes { 
-    position: relative; 
+.classes {
+    position: relative;
 }
 
-#classes { 
-    position: absolute; 
+#classes {
+    position: absolute;
     top:-145px;
 }
 
@@ -281,19 +281,19 @@ button:hover {
     grid-row: 4/5;
     justify-self: center;
     align-self: center;
-    text-align: center;  
+    text-align: center;
     margin-top: 75px;
 }
 
 #form {
     display: flex;
     flex-direction: column;
-    padding: 20px 100px;
+    padding: 20px 20px;
     background-color: #262626;
 }
 
 input {
-    padding: 10px 50px; 
+    padding: 10px 50px;
 }
 
 label {
@@ -332,7 +332,7 @@ footer {
         justify-self: center;
         align-self: start;
     }
-    
+
     header nav {
         display: inline;
         grid-column: 1/4;
@@ -444,7 +444,7 @@ footer {
     #contact-form {
         padding: 20px;
     }
-} 
+}
 
 @media (max-width: 319px) {
     header nav {
